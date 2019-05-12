@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DoctorProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:elevation="20dp"
+        android:id="@+id/RL1_doc_profile"
+        android:background="@color/textColor">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="20dp"
+            android:src="@drawable/back"
+            app:civ_border_color="#fff"
+            app:civ_border_width="3dp"
+            android:id="@+id/doctor_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/doctor_image"
+            android:textColor="#414141"
+            android:text="Dr. Name Title"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:id="@+id/doctor_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/doctor_name"
+            android:layout_below="@id/doctor_image"
+            android:text="0"
+            android:textColor="#fff"
+            android:padding="5dp"
+            android:background="#000099"
+            android:id="@+id/doctor_rating"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doctor_name"
+            android:text="specialist_in"
+            android:textAlignment="center"
+            android:textColor="#423c3c"
+            android:id="@+id/doctor_specialist_in"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_below="@+id/RL1_doc_profile">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Degree:\t\t\t"
+                android:padding="5dp"
+                android:id="@+id/degree_tag"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/consultation_tag"
+                android:text="cannot fetch details"
+                android:padding="5dp"
+                android:id="@+id/doctor_degree"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doctor_degree"
+                android:text="Experience:\t\t\t"
+                android:padding="5dp"
+                android:id="@+id/experience_tag"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doctor_degree"
+                android:layout_toRightOf="@+id/consultation_tag"
+                android:text="cannot fetch details"
+                android:padding="5dp"
+                android:id="@+id/doctor_experience"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@id/experience_tag"
+                android:background="@color/textColor"
+                android:id="@+id/LL_doc_1"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LL_doc_1"
+                android:text="Consultation fee:\t\t\t"
+                android:padding="5dp"
+                android:id="@+id/consultation_tag"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LL_doc_1"
+                android:layout_toRightOf="@+id/consultation_tag"
+                android:text="not available"
+                android:padding="5dp"
+                android:id="@+id/doctor_consultation_fee"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/consultation_tag"
+                android:text="\t\t\t(might vary)"
+                android:id="@+id/mightVary_tag"
+                android:textColor="#868484"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="5dp"
+                android:layout_below="@id/mightVary_tag"
+                android:background="@color/textColor"
+                android:id="@+id/LL_doc_2"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LL_doc_2"
+                android:text="Timing:\t\t\t"
+                android:padding="5dp"
+                android:id="@+id/timing_tag"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LL_doc_2"
+                android:layout_toRightOf="@+id/consultation_tag"
+                android:text="not available"
+                android:padding="5dp"
+                android:id="@+id/doctor_timing"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doctor_timing"
+                android:text="Days:\t\t\t"
+                android:padding="5dp"
+                android:id="@+id/days_tag"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doctor_timing"
+                android:layout_toRightOf="@+id/consultation_tag"
+                android:text="not available"
+                android:padding="5dp"
+                android:id="@+id/doctor_days"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="5dp"
+                android:layout_below="@id/doctor_days"
+                android:background="@color/textColor"
+                android:id="@+id/LL_doc_3"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LL_doc_3"
+                android:text="Location:\t\t\t"
+                android:padding="5dp"
+                android:id="@+id/location_tag"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LL_doc_3"
+                android:layout_toRightOf="@+id/consultation_tag"
+                android:text="not available"
+                android:padding="5dp"
+                android:id="@+id/doctor_location"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doctor_location"
+                android:layout_margin="5dp"
+                android:elevation="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="SHOW reviews"
+                android:background="@color/colorPrimaryDark"
+                android:id="@+id/review_btn"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/review_btn"
+                android:layout_margin="5dp"
+                android:elevation="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Call for Booking an appointment"
+                android:background="@color/colorPrimaryDark"
+                android:id="@+id/doctor_btn"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

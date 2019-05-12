@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_prescription"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Add prescription" />
+        <item
+            android:id="@+id/nav_reminder"
+            android:icon="@drawable/ic_access_alarm_black_24dp"
+            android:title="Medicine Reminder" />
+        <item
+            android:id="@+id/nav_library"
+            android:icon="@drawable/ic_library_books_black_24dp"
+            android:title="Drug Library" />
+        <item
+            android:id="@+id/nav_first_aid"
+            android:icon="@drawable/ic_medical_kit"
+            android:title="First Aid"/>
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="My Account" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_helpcenter"
+                android:icon="@drawable/ic_live_help_black_24dp"
+                android:title="Help Center" />
+            <item
+                android:id="@+id/nav_aboutUs"
+                android:icon="@drawable/ic_info"
+                android:title="About us" />
+        </menu>
+    </item>
+
+</menu>

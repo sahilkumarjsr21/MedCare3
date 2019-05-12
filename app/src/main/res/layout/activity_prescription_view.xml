@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#e2e6c5"
+    tools:context=".PrescriptionViewActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/prescription_title"
+        android:id="@+id/pres_tag"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pres_tag"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DATE : "
+            android:textAlignment="center"
+            android:id="@+id/date_tag"
+            />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date_tag"
+            android:text="DATE and TIME"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/date"
+            android:id="@+id/doctorNameTag"
+            android:text="Doctor name:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dr. Test Subject"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/doctorNameTag"
+            android:layout_below="@+id/date"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:id="@+id/doctorName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reg.no:"
+            android:layout_below="@+id/doctorNameTag"
+            android:id="@+id/regNumTag"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/doctorNameTag"
+            android:layout_below="@+id/doctorNameTag"
+            android:layout_marginLeft="20dp"
+            android:text="xxxxx"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/regNumber"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient ID:"
+            android:layout_below="@+id/regNumTag"
+            android:id="@+id/PnameTag"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regNumber"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/PnameTag"
+            android:text="NAME of the Patient"
+            android:textStyle="bold"
+            android:id="@+id/patientName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PnameTag"
+            android:text="Diagnosed with:"
+            android:id="@+id/diagnTag"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/diagnTag"
+            android:layout_below="@+id/PnameTag"
+            android:layout_marginLeft="10dp"
+            android:text="Problem"
+            android:id="@+id/diagnosedWith"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/diagnosedWith"
+            android:layout_alignParentLeft="true"
+            android:text="Blood Pressure:"
+            android:id="@+id/bloodTag"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/diagnosedWith"
+            android:layout_toRightOf="@+id/bloodTag"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="------"
+            android:id="@+id/bloodPressure"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bloodTag"
+            android:layout_alignParentLeft="true"
+            android:text="Instructions/Warnings:"
+            android:id="@+id/warnTag"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/warnTag"
+            android:layout_marginLeft="40dp"
+            android:text="things to take care of"
+            android:id="@+id/warning"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/warning"
+            android:layout_alignParentLeft="true"
+            android:text="Medicines prescribed:"
+            android:id="@+id/medTag"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/medTag"
+            android:layout_marginLeft="40dp"
+            android:text="drugs listed here\nrow by row\njust like this"
+            android:id="@+id/medDrugs"
+            />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/medlogo"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"/>
+
+</RelativeLayout>

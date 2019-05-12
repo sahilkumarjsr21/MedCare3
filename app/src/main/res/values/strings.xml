@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MedCare</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="MAP_API">AIzaSyCv5LLbW7nG_NnPjn0953t_Dyzt0_o6bIM</string>
+    <string name="GOOGLE_PLACES_API">AIzaSyCv5LLbW7nG_NnPjn0953t_Dyzt0_o6bIM</string>
+    <string name="GOOGLE_DIRECTION_MATRIX_API">AIzaSyCv5LLbW7nG_NnPjn0953t_Dyzt0_o6bIM </string>
+    <string name="drug">Medicine Name</string>
+    <string name="first">First Aid</string>
+</resources>
